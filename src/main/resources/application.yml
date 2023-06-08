@@ -1,0 +1,50 @@
+server:
+      port: 9096
+      
+spring: 
+      datasource:
+         username: sa
+         password: 
+         url: jdbc:h2:mem:mydb;DATABASE_TO_UPPER=false;DB_CLOSE_DELAY=-1
+         driver-class-name: org.h2.Driver
+      h2:
+        console:
+             enabled: true
+      jpa:
+         properties:
+           hibernate:
+             show-sql: true 
+             format-sql: true
+         database-platform: org.hibernate.dialect.H2Dialect
+             
+         hibernate:
+            ddl-auto: create  
+         defer-datasource-initialization: true  
+            
+      mvc:
+        view:
+          prefix: /views/
+          suffix: .jsp 
+          
+      mail:
+         host: smtp.gmail.com
+         port: 587
+         username: 
+         password: 
+         properties:
+          mail:
+            smtp:
+              starttls:
+                enable: true
+              auth: true
+                  
+userapp:
+     messages:
+       regSuccMsg : Your registration is successfull,Please check your email to unlock your account
+       regFailMsg : Registration Failed
+       pwdRecoveryMailSuccMsg : Password sent to your email
+       pwdRecMailFailInvalidMsg : Please enter valid email
+       unlockAccSuccMsg:  Your Account is unlocked successfully ..!  <a href=\"index\">login here</a>
+       invalidTempPwd : Please enter correct Temporary password              
+             
+            
