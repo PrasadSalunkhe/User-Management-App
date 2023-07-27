@@ -1,12 +1,13 @@
 server:
-      port: 9096
+     port: 9090
       
 spring: 
       datasource:
-         username: sa
-         password: 
-         url: jdbc:h2:mem:mydb;DATABASE_TO_UPPER=false;DB_CLOSE_DELAY=-1
+         url: jdbc:h2:mem:demodb
          driver-class-name: org.h2.Driver
+         username: sa
+         password: sa
+        
       h2:
         console:
              enabled: true

@@ -10,10 +10,9 @@ import lombok.Data;
 
 @Entity
 @Data
-@Table(name = "StateMaster")
+@Table(name = "statemaster")
 public class StateMasterEntity {
 
-	
     @Id
     @GeneratedValue
     @Column(name="state_id")

@@ -32,9 +32,9 @@ public class UserAccountEntity {
 	private String userEmail;
 	@Column(name="user_pazzword")
 	private String userPazzword;
-	@Column(name="user_mob-no")
+	@Column(name="user_mobno")
 	private String userMobileNumber;
-	@Column(name="date-of-birth")
+	@Column(name="DOB")
 	@Temporal(TemporalType.DATE)
 	private Date dateOfBirth;
 	@Column(name="gender")
@@ -55,5 +55,6 @@ public class UserAccountEntity {
 	private Integer cityId;
 	@Column(name="account_status")
 	private String accountStatus;
+	//insert into UserAccount (user_id,first_name,user_lastname,user_email,user_pazzword,user_mobno,DOB,gender,created_date,updated_date,country_id,state_id,city_id,account_status)
 	
 }

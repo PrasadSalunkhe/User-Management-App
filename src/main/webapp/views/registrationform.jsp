@@ -108,7 +108,7 @@
 					<td>Select Country :</td>
 					<td><form:select path="countryId" id="countryid">
 							<form:option value="">-Select-</form:option>
-							<form:options items=${countries } />
+							<form:options items= "${countries}" />
 
 						</form:select></td>
 				</tr>
@@ -116,7 +116,7 @@
 				<tr>
 					<td>Select State :</td>
 					<td><form:select path="stateId" id="stateid">
-							<form:option value="">-Select-</form:option>
+							<form:option value="${countries}">-Select-</form:option>
 						</form:select></td>
 				</tr>
 				<tr>
